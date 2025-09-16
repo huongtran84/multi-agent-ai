@@ -8,7 +8,7 @@ from app.common.custom_exception import CustomException
 logger = get_logger(__name__)
 API_URL = f"http://{settings.BACKEND_HOST}:{settings.BACKEND_PORT}/chat"
 st.set_page_config(page_title="Multi-Agent Chat", page_icon="🤖")
-st.title("Multi-Agent Chat Application 🤖")
+st.title("Multi-Agent Chat Application with TAvily 🤖")
 st.markdown("Interact with various AI models and leverage web search capabilities.")
 
 system_prompt = st.text_area("Define your AI agent", value="You are a helpful assistant.", height=70)
